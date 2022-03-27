@@ -31,7 +31,7 @@ public abstract class LivingEntityMixin {
         // If we didn't add our attribute to the builder in the previous method, this call would return null.
         EntityAttributeInstance instance = getAttributeInstance(AttributeExample.GENERIC_JUMP_BOOST);
         if (instance != null) {
-            // EntityAttributeInstance#getValue computes the
+            // EntityAttributeInstance#getValue computes the final value with all the modifiers applied.
             cir.setReturnValue(cir.getReturnValue() * (float) instance.getValue());
         }
     }
