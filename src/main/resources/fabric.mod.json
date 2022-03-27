@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "attribute_example",
+  "version": "${version}",
+  "name": "Custom Attribute Example Mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/attribute_example/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.acikek.attribute_example.AttributeExample"
+    ]
+  },
+  "mixins": [
+    "attribute_example.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
